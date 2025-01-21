@@ -1,11 +1,16 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
+import HomePage from './Pages/HomePage.jsx';
+
+
+
 
 function App() {
   return(
-    <div className='font-bold text-3xl bg-black text-white text-center mt-11'>
-      Lms main 
-    </div>
+   <Routes>
+    <Route path='/' element={<HomePage />} />
+   </Routes>
   )
 }
 
